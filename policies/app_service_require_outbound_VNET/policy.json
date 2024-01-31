@@ -1,0 +1,77 @@
+{
+  "name": "app_service_require_outbound_VNET",
+  "properties": {
+    "displayName": "App services require outbound VNET",
+    "description": "Virtual network based firewall rules are used to enable traffic from a specific subnet to app services while ensuring the traffic stays within the Azure boundary.",
+    "mode": "All",
+    "metadata": {
+      "version": "1.0.0",
+      "category": "App Service"
+    },
+    "parameters": {
+      "group": {
+        "type": "String",
+        "defaultValue": "app_service",
+        "metadata": {
+          "displayName": "group",
+          "description": "The policy group this belongs to"
+        }
+      },
+      "policy": {
+        "type": "String",
+        "defaultValue": "require_outbound_VNET",
+        "metadata": {
+          "displayName": "policy",
+          "description": "The name of the policy"
+        }
+      },
+      "effect": {
+        "type": "String",
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": ["AuditIfNotExists"],
+        "metadata": {
+          "displayName": "Effect",
+          "description": "The effect determines what happens when the policy rule is evaluated to match"
+        }
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.Web/sites"
+          },
+          {
+            "allOf": [
+              {
+                "not": {
+                  "field": "tags",
+                  "containsKey": "[concat('policy_exemption_', parameters('group'))]"
+                }
+              },
+              {
+                "not": {
+                  "field": "tags",
+                  "containsKey": "[concat('policy_exemption_', parameters('group'), '_', parameters('policy'))]"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]",
+        "details": {
+          "type": "Microsoft.Web/sites/",
+          "existenceCondition": {
+            "field": "Microsoft.Web/sites/virtualNetworkSubnetId",
+            "exists": "true"
+          }
+        }
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Management/managementgroups/a4d4d5cd-20cf-444e-bfe7-3d3ecef3fe94/providers/Microsoft.Authorization/policyDefinitions/app_service_require_outbound_VNET",
+  "type": "Microsoft.Authorization/policyDefinitions"
+}
