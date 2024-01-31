@@ -1,12 +1,10 @@
 {
-  "name": "app_service_only_allow_HTTPS",
   "properties": {
     "displayName": "App Service apps should only be accessible over HTTPS",
-    "policyType": "BuiltIn",
+    "policyType": "Custom",
     "mode": "Indexed",
     "description": "Use of HTTPS ensures server/service authentication and protects data in transit from network layer eavesdropping attacks.",
     "metadata": {
-      "version": "4.0.0",
       "category": "App Service"
     },
     "parameters": {
@@ -69,6 +67,7 @@
       }
     }
   },
-  "id": "/providers/Microsoft.Authorization/policyDefinitions/a4af4a39-4135-47fb-b175-47fbdf85311d",
-  "type": "Microsoft.Authorization/policyDefinitions"
+  "id": "/subscriptions/8e88c488-1596-4d79-8d3f-f9d16aa345ad/providers/Microsoft.Authorization/policyDefinitions/8885819b-2d54-4af8-908f-401f747b45ae",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "8885819b-2d54-4af8-908f-401f747b45ae"
 }
