@@ -1,12 +1,15 @@
 {
-  "name": "app_service_require_outbound_VNET",
   "properties": {
     "displayName": "app_service_require_outbound_VNET",
     "policyType": "Custom",
     "mode": "All",
     "description": "Virtual network based firewall rules are used to enable traffic from a specific subnet to app services while ensuring the traffic stays within the Azure boundary",
     "metadata": {
-      "category": "App Service"
+      "category": "App Service",
+      "createdBy": "c5c1dcd6-c181-466e-a606-cd67d0532eb9",
+      "createdOn": "2024-01-31T20:12:01.9725716Z",
+      "updatedBy": null,
+      "updatedOn": null
     },
     "parameters": {
       "group": {
@@ -31,9 +34,7 @@
           "displayName": "Effect",
           "description": "The effect determines what happens when the policy rule is evaluated to match"
         },
-        "allowedValues": [
-          "AuditIfNotExists"
-        ],
+        "allowedValues": ["AuditIfNotExists"],
         "defaultValue": "AuditIfNotExists"
       }
     },
@@ -74,6 +75,15 @@
       }
     }
   },
-  "id": "/subscriptions/8e88c488-1596-4d79-8d3f-f9d16aa345ad/providers/Microsoft.Authorization/policyDefinitions/3816b103-c012-4773-a0b2-6c907abe7dda",
-  "type": "Microsoft.Authorization/policyDefinitions"
+  "id": "/subscriptions/8e88c488-1596-4d79-8d3f-f9d16aa345ad/providers/Microsoft.Authorization/policyDefinitions/2dcc24c1-5e29-4029-90f0-181977ddd03a",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "2dcc24c1-5e29-4029-90f0-181977ddd03a",
+  "systemData": {
+    "createdBy": "maciejws@gmail.com",
+    "createdByType": "User",
+    "createdAt": "2024-01-31T20:12:01.9819475Z",
+    "lastModifiedBy": "maciejws@gmail.com",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2024-01-31T20:12:01.9819475Z"
+  }
 }
