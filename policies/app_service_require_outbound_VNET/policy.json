@@ -76,5 +76,6 @@
     }
   },
 
-  "type": "Microsoft.Authorization/policyDefinitions"
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "2dcc24c1-5e29-4029-90f0-181977ddd03a"
 }
