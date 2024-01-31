@@ -40,13 +40,32 @@
               {
                 "field": "Microsoft.Web/sites/httpsOnly",
                 "equals": "false"
+              },
+              {
+                "not": {
+                  "field": "tags",
+                  "containsKey": "[concat('policy_exemption_', parameters('group'))]"
+                }
+              },
+              {
+                "not": {
+                  "field": "tags",
+                  "containsKey": "[concat('policy_exemption_', parameters('group'), '_', parameters('policy'))]"
+                }
               }
             ]
           }
         ]
       },
       "then": {
-        "effect": "[parameters('effect')]"
+        "effect": "[parameters('effect')]",
+        "details": {
+          "type": "Microsoft.Web/sites/",
+          "existenceCondition": {
+            "field": "Microsoft.Web/sites/httpsOnly",
+            "exists": "true"
+          }
+        }
       }
     }
   },
