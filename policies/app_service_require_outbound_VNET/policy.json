@@ -1,40 +1,40 @@
 {
   "name": "app_service_require_outbound_VNET",
   "properties": {
-    "displayName": "App services require outbound VNET",
-    "description": "Virtual network based firewall rules are used to enable traffic from a specific subnet to app services while ensuring the traffic stays within the Azure boundary.",
+    "displayName": "app_service_require_outbound_VNET",
+    "policyType": "Custom",
     "mode": "All",
+    "description": "Virtual network based firewall rules are used to enable traffic from a specific subnet to app services while ensuring the traffic stays within the Azure boundary",
     "metadata": {
-      "version": "1.0.0",
       "category": "App Service"
     },
     "parameters": {
       "group": {
         "type": "String",
-        "defaultValue": "app_service",
         "metadata": {
           "displayName": "group",
           "description": "The policy group this belongs to"
-        }
+        },
+        "defaultValue": "app_service"
       },
       "policy": {
         "type": "String",
-        "defaultValue": "require_outbound_VNET",
         "metadata": {
           "displayName": "policy",
           "description": "The name of the policy"
-        }
+        },
+        "defaultValue": "require_outbound_VNET"
       },
       "effect": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
-        "allowedValues": [
-          "AuditIfNotExists"
-        ],
         "metadata": {
           "displayName": "Effect",
           "description": "The effect determines what happens when the policy rule is evaluated to match"
-        }
+        },
+        "allowedValues": [
+          "AuditIfNotExists"
+        ],
+        "defaultValue": "AuditIfNotExists"
       }
     },
     "policyRule": {
@@ -74,6 +74,6 @@
       }
     }
   },
-  "id": "/providers/Microsoft.Management/managementgroups/a4d4d5cd-20cf-444e-bfe7-3d3ecef3fe94/providers/Microsoft.Authorization/policyDefinitions/app_service_require_outbound_VNET",
+  "id": "/subscriptions/8e88c488-1596-4d79-8d3f-f9d16aa345ad/providers/Microsoft.Authorization/policyDefinitions/3816b103-c012-4773-a0b2-6c907abe7dda",
   "type": "Microsoft.Authorization/policyDefinitions"
 }
