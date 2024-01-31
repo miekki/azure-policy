@@ -7,7 +7,7 @@ repository:
   name: azure-policy
 
   # A short description of the repository that will show up on GitHub
-  description: Azure policy repository holds policy to keep Azure compliance and enforce standarts
+  description: Azure policy repository holds policy to keep Azure compliance and enforce standards.
 
   # A URL with more information about the repository
   # homepage: <URL of your App or Wiki Space>
