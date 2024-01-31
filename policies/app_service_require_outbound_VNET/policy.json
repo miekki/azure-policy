@@ -1,15 +1,11 @@
 {
   "properties": {
-    "displayName": "app_service_require_outbound_VNET",
+    "displayName": "App Service require outbound VNET - custom.",
     "policyType": "Custom",
     "mode": "All",
     "description": "Virtual network based firewall rules are used to enable traffic from a specific subnet to app services while ensuring the traffic stays within the Azure boundary",
     "metadata": {
-      "category": "App Service",
-      "createdBy": "c5c1dcd6-c181-466e-a606-cd67d0532eb9",
-      "createdOn": "2024-01-31T20:12:01.9725716Z",
-      "updatedBy": null,
-      "updatedOn": null
+      "category": "App Service"
     },
     "parameters": {
       "group": {
