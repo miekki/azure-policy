@@ -76,6 +76,5 @@
     }
   },
   "id": "/subscriptions/8e88c488-1596-4d79-8d3f-f9d16aa345ad/providers/Microsoft.Authorization/policyDefinitions/2dcc24c1-5e29-4029-90f0-181977ddd03a",
-  "type": "Microsoft.Authorization/policyDefinitions",
-  "name": "2dcc24c1-5e29-4029-90f0-181977ddd03a"
+  "type": "Microsoft.Authorization/policyDefinitions"
 }
