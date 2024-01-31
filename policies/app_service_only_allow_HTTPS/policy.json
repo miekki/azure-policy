@@ -8,6 +8,22 @@
       "category": "App Service"
     },
     "parameters": {
+      "group": {
+        "type": "String",
+        "metadata": {
+          "displayName": "group",
+          "description": "The policy group this belongs to"
+        },
+        "defaultValue": "app_service"
+      },
+      "policy": {
+        "type": "String",
+        "metadata": {
+          "displayName": "policy",
+          "description": "The name of the policy"
+        },
+        "defaultValue": "require_HTTPS"
+      },
       "effect": {
         "type": "String",
         "metadata": {
