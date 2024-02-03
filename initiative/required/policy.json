@@ -1,19 +1,35 @@
 {
-  "properties": {
-    "displayName": "MagicSoft_Required_2",
-    "policyType": "Custom",
-    "description": "This policy is required to all resources managed by MagicSoft organization",
-    "metadata": {
-      "version": "1.0.0",
-      "category": "required"
+  "description": "This policy is required to all resources managed by MagicSoft organization",
+  "displayName": "MagicSoft_Required",
+  "policyType": "Custom",
+  "metadata": {
+    "category": "required"
+  },
+  "parameters": {},
+  "policyDefinitionGroups": [
+    {
+      "additionalMetadataId": null,
+      "category": "required_group",
+      "description": null,
+      "displayName": "Required Group",
+      "name": "Required_Group"
+    }
+  ],
+  "policyDefinitions": [
+    {
+      "groupNames": [],
+      "parameters": {},
+      "policyDefinitionId": "/subscriptions/8e88c488-1596-4d79-8d3f-f9d16aa345ad/providers/Microsoft.Authorization/policyDefinitions/2dcc24c1-5e29-4029-90f0-181977ddd03a",
+      "policyDefinitionReferenceId": "App Service require outbound VNET - custom._1"
     },
-    "policyDefinitions": [
-      {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2dcc24c1-5e29-4029-90f0-181977ddd03a"
-      },
-      {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/885819b-2d54-4af8-908f-401f747b45ae"
-      }
-    ]
-  }
+    {
+      "groupNames": [],
+      "parameters": {},
+      "policyDefinitionId": "/subscriptions/8e88c488-1596-4d79-8d3f-f9d16aa345ad/providers/Microsoft.Authorization/policyDefinitions/8885819b-2d54-4af8-908f-401f747b45ae",
+      "policyDefinitionReferenceId": "App Service apps should only be accessible over HTTPS - custom._1"
+    }
+  ],
+  "type": "Microsoft.Authorization/policySetDefinitions",
+  "name": "c717403c66434d0da42f8e27",
+  "id": "/subscriptions/8e88c488-1596-4d79-8d3f-f9d16aa345ad/providers/Microsoft.Authorization/policySetDefinitions/c717403c66434d0da42f8e27"
 }
