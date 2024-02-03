@@ -2,16 +2,18 @@
   "id": "/subscriptions/8e88c488-1596-4d79-8d3f-f9d16aa345ad/providers/Microsoft.Authorization/policyAssignments/b50a09f14d72474fa0322487",
   "type": "Microsoft.Authorization/policyAssignments",
   "name": "b50a09f14d72474fa0322487",
-  "displayName": "MagicSoft Required Policies",
-  "policyDefinitionId": "/subscriptions/8e88c488-1596-4d79-8d3f-f9d16aa345ad/providers/Microsoft.Authorization/policySetDefinitions/c717403c66434d0da42f8e27",
-  "scope": "/subscriptions/8e88c488-1596-4d79-8d3f-f9d16aa345ad",
-  "notScopes": [],
-  "parameters": {},
-  "description": "Assign initiative to make sute all the resource are compliace with required policy",
-  "metadata": {
-    "assignedBy": "Maciej Maciejewski",
-    "createdOn": "2024-02-03T17:22:57.197755Z"
-  },
-  "enforcementMode": "Default",
-  "nonComplianceMessages": []
+  "properties": {
+    "displayName": "MagicSoft Required Policies",
+    "policyDefinitionId": "/subscriptions/8e88c488-1596-4d79-8d3f-f9d16aa345ad/providers/Microsoft.Authorization/policySetDefinitions/c717403c66434d0da42f8e27",
+    "scope": "/subscriptions/8e88c488-1596-4d79-8d3f-f9d16aa345ad",
+    "notScopes": [],
+    "parameters": {},
+    "description": "Assign initiative to make sute all the resource are compliace with required policy",
+    "metadata": {
+      "assignedBy": "Maciej Maciejewski",
+      "createdOn": "2024-02-03T17:22:57.197755Z"
+    },
+    "enforcementMode": "Default",
+    "nonComplianceMessages": []
+  }
 }
