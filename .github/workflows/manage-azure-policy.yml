@@ -29,3 +29,4 @@ jobs:
         with:
           paths: |
             policies/**
+            initiative/**

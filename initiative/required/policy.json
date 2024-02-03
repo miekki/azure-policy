@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "displayName": "MagicSoft_Required_2",
+    "policyType": "Custom",
+    "description": "This policy is required to all resources managed by MagicSoft organization",
+    "metadata": {
+      "version": "1.0.0",
+      "category": "required"
+    },
+    "policyDefinitions": [
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2dcc24c1-5e29-4029-90f0-181977ddd03a"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/885819b-2d54-4af8-908f-401f747b45ae"
+      }
+    ]
+  }
+}

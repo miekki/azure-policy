@@ -5,7 +5,8 @@
     "mode": "Indexed",
     "description": "Use of HTTPS ensures server/service authentication and protects data in transit from network layer eavesdropping attacks.",
     "metadata": {
-      "category": "App Service"
+      "category": "App Service",
+      "version": "1.0.0"
     },
     "parameters": {
       "group": {
@@ -40,10 +41,6 @@
           {
             "field": "type",
             "equals": "Microsoft.Web/sites"
-          },
-          {
-            "field": "kind",
-            "notContains": "functionapp"
           },
           {
             "anyOf": [
